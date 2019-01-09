@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>MrAlexBailey.com</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="{{ url_for('static', filename='animate.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div>
+            <p id='first'>... well, this is awkward.</p>
+            <p id='second'>I'm not quite ready here yet, but feel free to visit me on these platforms in the meantime:</p>
+            <div class='rows'>
+                <div class='row'>
+                    <a href="https://linkedin.com/in/MrAlexBailey"><img src="{{ url_for('static', filename='linkedin-white.png') }}" style="padding-right:10px"><span>/in/MrAlexBailey</span></a>
+                </div>
+                <div class='row'>
+                    <a href="https://github.com/MrAlexBailey"><img src="{{ url_for('static', filename='github-white.png') }}" style="padding-right:20px"><span>/MrAlexBailey</span></a>
+                </div>
+            </div>
+        </div>
+        <script src="{{ url_for('static', filename='index.js') }}" async defer></script>
+    </body>
+</html>
